@@ -1,49 +1,43 @@
 'use client'
 import { ExpandingButton } from "@/components/ui/expanding-button";
-import { Typewriter } from "../components/typewriter";
 import { HomeIcon, Images, Mail, UserRound } from "lucide-react";
+
+import HomeSection from "@/components/sections/home-section";
+import AboutSection from "@/components/sections/about-section";
+import PortfolioSection from "@/components/sections/portfolio-section";
+import ContactSection from "@/components/sections/contact-section";
+
+const scrollTo = (id: string) => {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+}
+
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-hidden flex">
-      {/* Filtered background image */}
-      <div
-        className="
-          fixed inset-0
-          bg-[url('/me-but-background.jpg')]
-          bg-cover bg-center
-          filter
-          contrast-15
-          -z-10
-        "
-      />
-      
-      <div className="flex w-screen">
-        <div className="flex flex-row justify-center items-center absolute h-screen z-50 p-4">
-          <div className="flex flex-col gap-2">
-            <ExpandingButton label="Home" icon={HomeIcon} />
-            <ExpandingButton label="About Me" icon={UserRound} />
-            <ExpandingButton label="Portfolio" icon={Images} />
-            <ExpandingButton label="Contact" icon={Mail} />
-          </div>
+    <main className="relative overflow-x-hidden flex flex-col h-screen overflow-y-scroll snap-y snap-mandatory">
+    
+      {/* Floating buttons (independent of layout) */}
+      <div className="fixed left-4 top-1/2 -translate-y-1/2 z-50 hidden md:flex">
+        <div className="flex flex-col gap-2">
+          <ExpandingButton label="Home"      icon={HomeIcon}  onClick={() => scrollTo("home")} />
+          <ExpandingButton label="About Me"  icon={UserRound} onClick={() => scrollTo("about-me")} />
+          <ExpandingButton label="Portfolio" icon={Images}    onClick={() => scrollTo("portfolio")} />
+          <ExpandingButton label="Contact"   icon={Mail}      onClick={() => scrollTo("contact")} />
         </div>
-        {/* Content */}
-        
-        <section className="relative min-h-screen w-screen flex flex-col items-center  p-6">
-          <div className="bg-red-600 w-screen h-[30vh]">
-            hello
-          </div>
-          <div className=" text-white flex flex-row w-screen justify-start">
-            <div className="px-20 sm:px-30 md:px-40">
-              <h1 className="text-7xl font-bold">Ashim Parajuli</h1>
-              <p className="mt-2 text-white/80 text-2xl">
-                I&apos;m a <Typewriter/>
-              </p>
-            </div>
-          </div>
-        </section>
       </div>
+    
+      {/* SECTION 1 - Home */}
+      <HomeSection />
+    
+      {/* SECTION 2 - About Me */}
+      <AboutSection/>
+    
+      {/* SECTION 3 - Portfolio */}
+      <PortfolioSection/>
       
+      {/* SECTION 4 - Contact */}
+      <ContactSection/>
     </main>
+
   )
 }

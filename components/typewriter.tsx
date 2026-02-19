@@ -28,7 +28,7 @@ export function Typewriter() {
 
   return (
     <span className="inline-flex items-center">
-      <span className="text-indigo-400 font-semibold">
+      <span className="text-salmon font-semibold">
         {text}
       </span>
 
