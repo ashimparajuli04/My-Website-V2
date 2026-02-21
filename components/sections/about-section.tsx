@@ -54,7 +54,6 @@ export default function AboutSection() {
           {/* Info grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
             {[
-              { label: "Birthday", value: "7 August 2004" },
               { label: "Phone", value: "+977 9761795269" },
               { label: "City", value: "Lalitpur, Nepal" },
               { label: "Age", value: "21" },

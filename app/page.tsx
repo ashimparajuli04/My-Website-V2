@@ -14,7 +14,7 @@ const scrollTo = (id: string) => {
 
 export default function Home() {
   return (
-    <main className="relative overflow-x-hidden flex flex-col h-screen overflow-y-scroll snap-y snap-mandatory">
+    <main className="relative overflow-x-hidden flex flex-col h-screen overflow-y-scroll">
     
       {/* Floating buttons (independent of layout) */}
       <div className="fixed left-4 top-1/2 -translate-y-1/2 z-50 hidden md:flex">

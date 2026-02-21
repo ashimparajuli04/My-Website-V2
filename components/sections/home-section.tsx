@@ -17,12 +17,12 @@ export default function HomeSection() {
             <div className="flex flex-row gap-2 py-3 -mt-2">
               <button className="">
                 <a
-                  href="https://github.com/ashimparajuli04"
+                  href="https://www.facebook.com/ashim899"
                   target="_blank"   // opens in new tab
                   rel="noopener noreferrer" // security best practice
                   className="text-white hover:text-salmon transition-colors"
                 >
-                  <GithubIcon/>
+                  <FacebookIcon/>
 
                 </a>
               </button>
@@ -39,13 +39,12 @@ export default function HomeSection() {
               </button>
               <button className="">
                 <a
-                  href="https://www.facebook.com/ashim899"
+                  href="https://github.com/ashimparajuli04"
                   target="_blank"   // opens in new tab
                   rel="noopener noreferrer" // security best practice
                   className="text-white hover:text-salmon transition-colors"
                 >
-                  <FacebookIcon/>
-
+                  <GithubIcon/>
                 </a>
               </button>
               <button className="">
