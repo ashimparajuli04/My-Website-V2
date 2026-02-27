@@ -73,7 +73,7 @@ export default function PortfolioSection() {
               </div>
     
               {/* Right - stat boxes */}
-              <div className="flex flex-col gap-3 md:w-48 shrink-0">
+              <div className="hidden md:flex flex-col gap-3 md:w-48 shrink-0">
                 {[
                   { label: "API Endpoints", value: "30+" },
                   { label: "DB Tables", value: "8" },

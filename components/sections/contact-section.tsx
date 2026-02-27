@@ -19,7 +19,7 @@ export default function ContactSection() {
             {
               label: "Email",
               value: "ashimparajuli04@gmail.com",
-              href: "mailto:your@email.com",
+              href: "mailto:ashimparajuli04@gmail.com",
               icon: (
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0-9.75 6.75L2.25 6.75" />
@@ -38,8 +38,8 @@ export default function ContactSection() {
             },
             {
               label: "GitHub",
-              value: "github.com/ashimparajuli04",
-              href: "https://github.com/ashimparajuli04",
+              value: "ashimparajuli04",
+              href: "https://github.comashimparajuli04",
               icon: (
                 <GithubIcon />
               ),
@@ -54,7 +54,7 @@ export default function ContactSection() {
             },
             {
               label: "LinkedIn",
-              value: "linkedin.com/in/ashim-parajuli-17695032a",
+              value: "ashim-parajuli-17695032a",
               href: "https://www.linkedin.com/in/ashim-parajuli-17695032a/",
               icon: (
                 <LinkedInIcon />

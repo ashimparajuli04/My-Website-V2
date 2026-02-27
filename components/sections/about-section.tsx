@@ -1,6 +1,21 @@
 import Image from "next/image";
 
 export default function AboutSection() {
+  function getAge(birthDate: Date) {
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+  
+    if (
+      monthDiff < 0 ||
+      (monthDiff === 0 && today.getDate() < birthDate.getDate())
+    ) {
+      age--;
+    }
+  
+    return age;
+  }
+  const age = getAge(new Date("2004-08-07"));
   return (
     <section id="about-me" className="min-h-screen w-screen flex items-center justify-center text-white snap-start shrink-0 bg-gray-950 py-20">
       <div className="max-w-6xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -48,7 +63,7 @@ export default function AboutSection() {
           </div>
     
           <p className="text-white/60 leading-relaxed">
-            Hi, I&apos;m <span className="font-bold">Ashim Parajuli</span>, a CSIT student currently studying in <br></br><span className="font-bold">Patan Multiple Campus</span>. I have experience in developing backend and web applications using various technologies such as Next.js, Python (Backend), and React. I&apos;m always eager to learn new skills and collaborate with talented individuals to create innovative solutions.
+            Hi, I&apos;m <span className="font-bold whitespace-nowrap">Ashim Parajuli</span>, a CSIT student currently studying in <span className="font-bold whitespace-nowrap">Patan Multiple Campus</span>. I have experience in developing backend and web applications using various technologies such as Next.js, Python (Backend), and React. I&apos;m always eager to learn new skills and collaborate with talented individuals to create innovative solutions.
           </p>
     
           {/* Info grid */}
@@ -56,7 +71,7 @@ export default function AboutSection() {
             {[
               { label: "Phone", value: "+977 9761795269" },
               { label: "City", value: "Lalitpur, Nepal" },
-              { label: "Age", value: "21" },
+              { label: "Age", value: age },
               { label: "Degree", value: "Undergraduate" },
               { label: "Email", value: "ashimparajuli04@gmail.com" },
               { label: "Freelance", value: "Available" },

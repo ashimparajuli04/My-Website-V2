@@ -9,7 +9,7 @@ export default function HomeSection() {
         
         <div className="w-screen h-[30vh]" />
         <div className="text-white flex flex-row w-screen justify-start">
-          <div className="px-30 sm:px-40 md:px-50">
+          <div className="px-12 sm:px-40 md:px-50">
             <h1 className="text-7xl font-bold">Ashim Parajuli</h1>
             <p className="mt-1 text-white/80 text-3xl min-h-11">
               I&apos;m a <Typewriter/>

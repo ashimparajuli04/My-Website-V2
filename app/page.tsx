@@ -17,7 +17,7 @@ export default function Home() {
     <main className="relative overflow-x-hidden flex flex-col h-screen overflow-y-scroll">
     
       {/* Floating buttons (independent of layout) */}
-      <div className="fixed left-4 top-1/2 -translate-y-1/2 z-50 hidden md:flex">
+      <div className="fixed left-4 top-1/2 -translate-y-1/2 z-50 hidden lg:flex">
         <div className="flex flex-col gap-2">
           <ExpandingButton label="Home"      icon={HomeIcon}  onClick={() => scrollTo("home")} />
           <ExpandingButton label="About Me"  icon={UserRound} onClick={() => scrollTo("about-me")} />
