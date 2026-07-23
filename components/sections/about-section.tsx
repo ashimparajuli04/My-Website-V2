@@ -63,18 +63,16 @@ export default function AboutSection() {
           </div>
     
           <p className="text-white/60 leading-relaxed">
-            Hi, I&apos;m <span className="font-bold whitespace-nowrap">Ashim Parajuli</span>, a CSIT student currently studying in <span className="font-bold whitespace-nowrap">Patan Multiple Campus</span>. I have experience in developing backend and web applications using various technologies such as Next.js, Python (Backend), and React. I&apos;m always eager to learn new skills and collaborate with talented individuals to create innovative solutions.
+            Hi, I&apos;m <span className="font-bold whitespace-nowrap">Ashim Parajuli</span>, a CSIT student currently studying in <span className="font-bold whitespace-nowrap">Patan Multiple Campus</span>. I have experience in developing backend and web applications using various technologies such as Next.js, FastAPI, and React. I&apos;m always eager to learn new skills and collaborate with talented individuals to create innovative solutions.
           </p>
     
           {/* Info grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
             {[
-              { label: "Phone", value: "+977 9761795269" },
               { label: "City", value: "Lalitpur, Nepal" },
               { label: "Age", value: age },
               { label: "Degree", value: "Undergraduate" },
               { label: "Email", value: "ashimparajuli04@gmail.com" },
-              { label: "Freelance", value: "Available" },
             ].map(({ label, value }) => (
               <div key={label} className="flex gap-2">
                 <span className="text-indigo-400 font-semibold shrink-0">{label}:</span>
